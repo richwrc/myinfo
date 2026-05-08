@@ -20,7 +20,7 @@ export default {
     viewDetail: 'View Project Details',
     backToList: 'Back to Portfolio',
     featureTitle: 'Feature List (Demo)',
-    featureSubtitle: 'Each feature below maps to an isolated component demo.',
+    featureSubtitle: 'component demo.',
     demoLabel: 'Component Demo',
     notFoundTitle: 'Project Not Found',
     notFoundSubtitle: 'This project might not exist yet or the link is invalid.',
@@ -83,9 +83,14 @@ export default {
             componentKey: 'auth',
           },
           {
-            name: 'Event Data Listing',
+            name: 'Table',
             description: 'Implemented filters, sorting, pagination, and status badges.',
             componentKey: 'table',
+          },
+          {
+            name: 'Event Data Listing',
+            description: 'Infinite Scroll',
+            componentKey: 'list',
           },
         ],
       },
@@ -97,14 +102,19 @@ export default {
         tech: 'Vue.js / Element Plus / SCSS / AJAX',
         features: [
           {
-            name: 'System Dashboard',
-            description: 'Composed KPI cards and quick status overviews for operators.',
-            componentKey: 'dashboard',
+            name: 'Login & Access Control Flow',
+            description: 'Manage authenticated routes and role-based feature visibility.',
+            componentKey: 'auth',
           },
           {
-            name: 'Master Data Table',
-            description: 'Built CRUD table flows with quick search and inline editing.',
-            componentKey: 'table',
+            name: 'Element Plus Demo Page',
+            description: 'Showcase common Element Plus form controls (Input / Select / Button).',
+            componentKey: 'element',
+          },
+          {
+            name: 'WebSocket Realtime Demo',
+            description: 'Demonstrate connect, receive updates, and disconnect workflow.',
+            componentKey: 'websocket',
           },
         ],
       },
@@ -116,14 +126,19 @@ export default {
         tech: 'Vue3 / Element Plus / API',
         features: [
           {
-            name: 'Identity Verification Flow',
-            description: 'Implemented bind, verification, and error handling flows.',
+            name: 'Login & Access Control Flow',
+            description: 'Control session state and permission-based page access.',
             componentKey: 'auth',
           },
           {
-            name: 'Binding Record Management',
-            description: 'Displayed binding records, statuses, and operation history.',
-            componentKey: 'table',
+            name: 'Element Plus Demo Page',
+            description: 'Sample settings UI with standard Element Plus form patterns.',
+            componentKey: 'element',
+          },
+          {
+            name: 'WebSocket Realtime Demo',
+            description: 'Simulate realtime verification status updates from backend.',
+            componentKey: 'websocket',
           },
         ],
       },
@@ -135,14 +150,9 @@ export default {
         tech: 'Vue.js / jQuery / HTML / CSS / SCSS',
         features: [
           {
-            name: 'Hero Visual Modules',
-            description: 'Managed hero banners, campaign sections, and conversion blocks.',
-            componentKey: 'dashboard',
-          },
-          {
-            name: 'Registration Integration',
-            description: 'Connected registration fields with backend submission flows.',
-            componentKey: 'auth',
+            name: 'One-page Website Demo',
+            description: 'Single-page layout feature sections.',
+            componentKey: 'onepage',
           },
         ],
       },

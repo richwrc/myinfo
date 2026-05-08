@@ -5,6 +5,10 @@ import { useI18n } from 'vue-i18n'
 import DemoAuthPanel from '../components/project-demos/DemoAuthPanel.vue'
 import DemoDataTable from '../components/project-demos/DemoDataTable.vue'
 import DemoDashboardCard from '../components/project-demos/DemoDashboardCard.vue'
+import DemoList from '../components/project-demos/DemoList.vue'
+import DemoElementPlus from '../components/project-demos/DemoElementPlus.vue'
+import DemoWebSocket from '../components/project-demos/DemoWebSocket.vue'
+import DemoOnePage from '../components/project-demos/DemoOnePage.vue'
 
 const route = useRoute()
 const { t, tm } = useI18n()
@@ -16,6 +20,10 @@ const demoComponentMap = {
   auth: DemoAuthPanel,
   table: DemoDataTable,
   dashboard: DemoDashboardCard,
+  list: DemoList,
+  element: DemoElementPlus,
+  websocket: DemoWebSocket,
+  onepage: DemoOnePage,
 }
 
 const resolveFeatureComponent = (featureKey) => demoComponentMap[featureKey] || DemoDashboardCard

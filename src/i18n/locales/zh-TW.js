@@ -20,7 +20,7 @@ export default {
     viewDetail: '查看作品內容',
     backToList: '返回作品列表',
     featureTitle: '功能列表（範例）',
-    featureSubtitle: '以下為對應元件展示，後續可替換為正式內容。',
+    featureSubtitle: '以下為對應元件展示',
     demoLabel: 'Component Demo',
     notFoundTitle: '找不到這個作品',
     notFoundSubtitle: '此作品可能尚未建立或連結有誤。',
@@ -81,9 +81,14 @@ export default {
             componentKey: 'auth',
           },
           {
-            name: '賽事資料列表',
+            name: 'Table後台範例',
             description: '支援篩選、排序、分頁與欄位狀態顯示。',
             componentKey: 'table',
+          },
+          {
+            name: '賽事資料列表',
+            description: '無限滾動列表',
+            componentKey: 'list',
           },
         ],
       },
@@ -94,14 +99,19 @@ export default {
         tech: 'Vue.js / Element Plus / SCSS / AJAX',
         features: [
           {
-            name: '系統儀表板',
-            description: '整合多個 KPI 卡片與狀態總覽資訊。',
-            componentKey: 'dashboard',
+            name: '登入與權限流程',
+            description: '以路由守衛與角色控管管理登入後可見頁面與操作權限。',
+            componentKey: 'auth',
           },
           {
-            name: '主資料維護列表',
-            description: '提供 CRUD、快速搜尋與欄位編輯操作。',
-            componentKey: 'table',
+            name: 'Element Plus Demo 頁面',
+            description: '示範 Element Plus 常見表單元件組合（Input / Select / Button）。',
+            componentKey: 'element',
+          },
+          {
+            name: 'WebSocket 即時推播 Demo',
+            description: '展示建立連線、接收訊息、斷線等基本即時資料流程。',
+            componentKey: 'websocket',
           },
         ],
       },
@@ -112,14 +122,19 @@ export default {
         tech: 'Vue3 / Element Plus / API',
         features: [
           {
-            name: '身份驗證流程',
-            description: '管理綁定、登入驗證與錯誤處理提示。',
+            name: '登入與權限流程',
+            description: '搭配身份驗證流程控管使用者登入狀態與頁面存取權限。',
             componentKey: 'auth',
           },
           {
-            name: '綁定紀錄管理',
-            description: '顯示綁定清單、狀態更新與操作紀錄。',
-            componentKey: 'table',
+            name: 'Element Plus Demo 頁面',
+            description: '示範設定頁常見欄位與動作按鈕配置。',
+            componentKey: 'element',
+          },
+          {
+            name: 'WebSocket 即時推播 Demo',
+            description: '模擬驗證狀態即時更新與推播提示流程。',
+            componentKey: 'websocket',
           },
         ],
       },
@@ -130,14 +145,9 @@ export default {
         tech: 'Vue.js / jQuery / HTML / CSS / SCSS',
         features: [
           {
-            name: '首頁視覺模組',
-            description: '輪播區、活動 Banner 與導流區塊管理。',
-            componentKey: 'dashboard',
-          },
-          {
-            name: '報名資料整合',
-            description: '整合報名欄位與後台資料串接流程。',
-            componentKey: 'auth',
+            name: '一頁式網站範例',
+            description: '展示特色區塊頁單頁版型。',
+            componentKey: 'onepage',
           },
         ],
       },
