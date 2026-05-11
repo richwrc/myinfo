@@ -20,9 +20,10 @@ const skills = computed(() => tm('resume.skills'))
   </section>
 
   <section class="card-grid">
-    <article class="card fade-up" v-for="skill in skills" :key="skill">
+    <article class="card fade-up" v-for="(skill,index) in skills" :key="skill">
       <h3>{{ skill }}</h3>
-      <p>{{ t('home.skillDesc') }}</p>
+      <p v-if="index === 8||index === 9">{{ t('home.skillDesc2') }}</p>
+      <p v-else>{{ t('home.skillDesc') }}</p>
     </article>
   </section>
 </template>

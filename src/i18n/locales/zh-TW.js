@@ -9,6 +9,7 @@ export default {
   home: {
     tag: '104 風格履歷網站',
     skillDesc: '具備實務經驗，可獨立完成開發與優化。',
+    skillDesc2: '具備實務經驗',
   },
   about: {
     title: '工作經歷',
