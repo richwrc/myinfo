@@ -7,7 +7,7 @@ export default {
     langEn: 'English',
   },
   home: {
-    tag: '104 風格履歷網站',
+    tag: '履歷網站',
     skillDesc: '具備實務經驗，可獨立完成開發與優化。',
     skillDesc2: '具備實務經驗',
   },
@@ -25,6 +25,25 @@ export default {
     demoLabel: 'Component Demo',
     notFoundTitle: '找不到這個作品',
     notFoundSubtitle: '此作品可能尚未建立或連結有誤。',
+  },
+  liveRoom: {
+    matchTitle: '英冠 升級附加賽決賽 05月23日 22:30',
+    statusFinished: '已結束',
+    homeTeam: '赫爾城',
+    awayTeam: '米德爾斯堡',
+    tabChat: '聊天',
+    tabHost: '主播',
+    follow: '關注',
+    inputPlaceholder: '快來嘮兩句唄',
+    joinHint: '小球迷 AijljDKJ 進入直播間',
+    hostTitle: '主播介紹',
+    hostDesc: '提供賽事分析、即時解說與互動問答，協助觀眾掌握比賽節奏。',
+    you: '我',
+    messages: [
+      { level: 15, user: '我要來咯', text: '這場節奏好快' },
+      { level: 4, user: '小球迷', text: '主隊今天防守很穩' },
+      { level: 35, user: '主播小助手', text: '歡迎加入直播間，記得遵守聊天規範。' },
+    ],
   },
   resume: {
     profile: {
@@ -90,6 +109,11 @@ export default {
             name: '賽事資料列表',
             description: '無限滾動列表',
             componentKey: 'list',
+          },
+          {
+            name: '賽事直播聊天室',
+            description: '上方賽事視訊區，下方即時聊天互動（含主播分頁）。',
+            componentKey: 'videoChat',
           },
         ],
       },

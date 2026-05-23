@@ -7,7 +7,7 @@ export default {
     langEn: 'English',
   },
   home: {
-    tag: '104-style Resume Site',
+    tag: 'Resume Site',
     skillDesc: 'Hands-on implementation experience with delivery and optimization.',
   },
   about: {
@@ -24,6 +24,25 @@ export default {
     demoLabel: 'Component Demo',
     notFoundTitle: 'Project Not Found',
     notFoundSubtitle: 'This project might not exist yet or the link is invalid.',
+  },
+  liveRoom: {
+    matchTitle: 'Championship Play-off Final · May 23, 22:30',
+    statusFinished: 'Finished',
+    homeTeam: 'Hull City',
+    awayTeam: 'Middlesbrough',
+    tabChat: 'Chat',
+    tabHost: 'Host',
+    follow: 'Follow',
+    inputPlaceholder: 'Say something...',
+    joinHint: 'Fan AijljDKJ joined the live room',
+    hostTitle: 'Host Profile',
+    hostDesc: 'Provides match analysis, live commentary, and Q&A to help viewers follow the game.',
+    you: 'Me',
+    messages: [
+      { level: 15, user: 'Fan_01', text: 'This match is intense.' },
+      { level: 4, user: 'Supporter', text: 'Home defense looks solid.' },
+      { level: 35, user: 'Host Assistant', text: 'Welcome to the live room. Please follow chat rules.' },
+    ],
   },
   resume: {
     profile: {
@@ -91,6 +110,11 @@ export default {
             name: 'Event Data Listing',
             description: 'Infinite Scroll',
             componentKey: 'list',
+          },
+          {
+            name: 'Live Match Chat Room',
+            description: 'Video area on top with realtime chat interaction below.',
+            componentKey: 'videoChat',
           },
         ],
       },
