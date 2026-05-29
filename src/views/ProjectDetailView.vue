@@ -10,6 +10,9 @@ import DemoElementPlus from '../components/project-demos/DemoElementPlus.vue'
 import DemoWebSocket from '../components/project-demos/DemoWebSocket.vue'
 import DemoOnePage from '../components/project-demos/DemoOnePage.vue'
 import DemoVideoChat from '../components/project-demos/DemoVideoChat.vue'
+import DemoDiceGame from '../components/project-demos/DemoDiceGame.vue'
+import DemoCrashGame from '../components/project-demos/DemoCrashGame.vue'
+import DemoSlideGame from '../components/project-demos/DemoSlideGame.vue'
 
 const route = useRoute()
 const { t, tm } = useI18n()
@@ -26,6 +29,9 @@ const demoComponentMap = {
   websocket: DemoWebSocket,
   onepage: DemoOnePage,
   videoChat: DemoVideoChat,
+  diceGame: DemoDiceGame,
+  crashGame: DemoCrashGame,
+  slideGame: DemoSlideGame,
 }
 
 const resolveFeatureComponent = (featureKey) => demoComponentMap[featureKey] || DemoDashboardCard
